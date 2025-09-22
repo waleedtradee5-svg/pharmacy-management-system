@@ -1,5 +1,5 @@
-streamlit
 streamlit-option-menu
+streamlit
 pandas
 plotly
 openpyxl
@@ -13,3 +13,4 @@ scikit-image
 scikit-learn
 bokeh
 matplotlib
+python-docx
