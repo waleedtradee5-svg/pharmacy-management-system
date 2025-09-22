@@ -1,16 +1,11 @@
-
-streamlit_option_menu
 streamlit
+streamlit-option-menu
 pandas
 plotly
 openpyxl
 sqlalchemy
-mysql-connector-python  # For database connections
-fpdf2                   # For PDF generation
-# You had a warning about PyFPDF and fpdf2, so only use fpdf2
-# If your code uses a different PDF library, replace this with that library
-
-# Other libraries inferred from your project
+mysql-connector-python
+fpdf2
 numpy
 scipy
 lxml
@@ -18,4 +13,3 @@ scikit-image
 scikit-learn
 bokeh
 matplotlib
-streamlit-option-menu
