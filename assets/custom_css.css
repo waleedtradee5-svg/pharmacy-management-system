@@ -1,0 +1,131 @@
+/* --- Global Variables for Light & Professional Theme --- */
+:root {
+    --primary-color: #007bff; /* Professional Blue */
+    --secondary-color: #6c757d; /* Muted Gray */
+    --background-color: #f8f9fa; /* Light Gray Background */
+    --card-background-color: #ffffff; /* White Cards */
+    --text-color: #343a40; /* Dark Gray Text */
+    --text-color-light: #6c757d;
+    --border-color: #dee2e6;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    --border-radius: 0.5rem;
+}
+
+/* --- Base Styling --- */
+body {
+    color: var(--text-color);
+}
+
+.stApp {
+    background-color: var(--background-color);
+}
+
+/* --- KPI Card Styling --- */
+.kpi-card {
+    background-color: var(--card-background-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--primary-color);
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    height: 100%; /* For uniform height in columns */
+}
+
+.kpi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.kpi-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color-light);
+    margin-bottom: 0.5rem;
+}
+
+.kpi-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* --- Chart & Table Containers --- */
+.chart-container, .table-container {
+    background-color: var(--card-background-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-top: 1.5rem;
+}
+
+h2.container-title {
+    font-size: 1.25rem;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* --- Modal Styling --- */
+div[data-testid="stModal"] > div {
+    background-color: var(--card-background-color);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+}
+
+/* --- Form and Button Styling --- */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.delete-button button {
+    background-color: #dc3545 !important;
+    color: white !important;
+}
+
+/* --- Status Badge Styling --- */
+.status-badge {
+    padding: 0.25em 0.6em;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.375rem;
+    color: #fff;
+}
+
+.status-low { background-color: #dc3545; } /* Red */
+.status-near-expiry { background-color: #fd7e14; } /* Orange */
+.status-ok { background-color: #28a745; } /* Green */
+.status-pending { background-color: #ffc107; color: #000; } /* Yellow */
+.status-received { background-color: #28a745; } /* Green */
+
+/* --- Notification Bell --- */
+.notification-bell {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    font-size: 0.75rem;
+}
